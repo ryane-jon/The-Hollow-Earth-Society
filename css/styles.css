@@ -1,28 +1,39 @@
 /*main containers*/
-body{
-    background-color: lightblue;
-}
+
 
 header{
     background-color: burlywood;
     box-shadow: 2px 2px 8px;
+    margin: 5px;
 }
+    .logo{
+        float:left; 
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-top: 16px
+    }
 
 nav{
-    background-color: burlywood;
+    background-color: darkgray;
     box-shadow: 2px 2px 8px;
 }
-
+    ul{
+        margin:0px;
+        padding:0px;
+        overflow:hidden;
+    }
     li{
         border: 2px solid black;
-        border-radius: 5%;
         background-color: darkgray;
         list-style-type: none;
+        float: left;
+        width: 13%;
+        padding:8px;
     }
 
     a{
         color: black;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
     }
 
@@ -34,29 +45,57 @@ nav{
         background-color: white;
     }
 
-main{
-    background-color: lightgreen;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px;
+body{
+    background-color: lightblue;
 }
+    .left-col{
+        float:left;
+        width: 64%;
+    }
+    .right-col{
+        float:right;
+        width: 30%;
+    }
+    main{
+        background-color: lightgreen;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px;
+        padding-top:1px;
+        padding-right:10px;
+        padding-bottom:10px;
+        padding-left: 10px;
+        margin:5px
+    }
 
-aside{
-    background-color: lightgreen;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px;
-}
+    aside{
+        background-color: lightgreen;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px;
+        padding-top:1px;
+        padding-right:10px;
+        padding-bottom:5px;
+        padding-left: 10px;
+        margin:5px;
+        width: 100%;
+        float:right;
+    }
 
 footer{
     background-color: lightgreen;
     border-radius: 10px;
     box-shadow: 2px 2px 8px;
     font-size: 10px;
+    float:left;
+    width:100%
 }
 
 
 /*text*/
 h1{
     font-family: Arial;
+    font-size: 50px;
+    padding-top:10px;
+    padding-bottom:16px;
 }
 
 h2{
@@ -106,11 +145,11 @@ tr:nth-child(odd){
 }
 
 tr:hover{
-    background-color:lightgreen;
+    background-color:lightblue;
 }
 
 td:hover{
-    background-color:lightblue;
+    background-color:lightgreen;
 }
 
 th{

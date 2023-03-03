@@ -7,8 +7,8 @@
 
     <body>
         <header>
+            <img src="images/logo.svg" alt="Logo" width = "50px" class="logo"/>
             <a href="index.html"><h1>The Hollow Earth Society</h1></a>
-
         </header>
 
         <nav>
@@ -19,38 +19,41 @@
                 <a href="img_gallery.html"><li>Image Gallery</li></a>
             </ul>   
         </nav>
+        <div class = "left-col">
+            <main>
+                <form>
+                    <fieldset>
+                        <legend>Contact Us using the form below.</legend>
+                        
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" value=""/> <br/>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" value=""/> <br/>
 
-        <main>
-            <form>
-                <fieldset>
-                    <legend>Contact Us using the form below.</legend>
-                    
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" value=""/> <br/>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" value=""/> <br/>
-
-                    <label for="membership">Membership Status:</label>
-                    <select id="membership" name="membership">
-                        <option value="member">Member</option>
-                        <option value="nonmember">Non-Member</option>
-                    </select><br/>
-                    
-                    <label for="contactReason">Why are you contacting us?</label>
-                    <textarea name="contactReason" value=""></textarea> <br/>
-                    
-                    <label for="fileUpload">Attach a file: </label>
-                    <input type="file" name="fileUpload" value=""/> <br/>
-                    
-                    <input type="submit" value="Submit">
-                </fieldset>
-                <br/>
-            </form>
-        </main>
-
-        <aside> </aside>
-
+                        <label for="membership">Membership Status:</label>
+                        <select id="membership" name="membership">
+                            <option value="member">Member</option>
+                            <option value="nonmember">Non-Member</option>
+                        </select><br/>
+                        
+                        <label for="contactReason">Why are you contacting us?</label>
+                        <textarea name="contactReason" value=""></textarea> <br/>
+                        
+                        <label for="fileUpload">Attach a file: </label>
+                        <input type="file" name="fileUpload" value=""/> <br/>
+                        
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                    <br/>
+                </form>
+            </main>
+        </div>
+        <div class = "right-col">
+            <aside>
+                <h3>BIG NEWS</h3>
+            </aside>
+        </div>
         <footer>
             <p>Copyright Ryan Edwin Jones</p>
         </footer>
