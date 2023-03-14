@@ -1,16 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 283.46 283.46" style="enable-background:new 0 0 283.46 283.46;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#76297E;}
-	.st1{fill:#FFFFFF;}
-</style>
-<g id="Layer_1">
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="500" height="500" viewBox="0 0 500 500" xml:space="preserve">
+<desc>Created with Fabric.js 4.6.0</desc>
+<defs>
+</defs>
+<g transform="matrix(0.81 0.35 -0.35 0.81 250 250)" id="zFuagnizS-Fga9CGteSUI"  >
+<filter id="SVGID_323" y="-24%" height="148%" x="-22%" width="144%" >
+	<feGaussianBlur in="SourceAlpha" stdDeviation="0"></feGaussianBlur>
+	<feOffset dx="-11.75" dy="18.16" result="oBlur" ></feOffset>
+	<feFlood flood-color="rgb(0,0,0)" flood-opacity="1"/>
+	<feComposite in2="oBlur" operator="in" />
+	<feMerge>
+		<feMergeNode></feMergeNode>
+		<feMergeNode in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<path style="stroke: rgb(146,18,159); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(112,35,119); fill-rule: nonzero; opacity: 1;filter: url(#SVGID_323);" vector-effect="non-scaling-stroke"  transform=" translate(-249.44, -235.71)" d="M 498.88272 235.62776 C 498.88272 344.62778000000003 428.98219 437.38586 331.63114 471.41265999999996 L 313.08581000000004 418.28279999999995 C 388.60611000000006 391.95001999999994 442.83992 320.08340999999996 442.83992 235.62776999999994 C 442.83992 151.44310999999993 388.95359 79.76681999999994 313.8121 53.22760999999994 L 332.35735999999997 0.09794999999994047 C 429.32962999999995 34.33137999999994 498.88273 126.89895999999995 498.88273 235.62774999999993 z M 0 235.62776 C 0 126.79509999999999 69.68605 34.154529999999994 166.80337 0 L 185.34863 53.12967 C 110.06209000000001 79.59012 56.042820000000006 151.33933 56.042820000000006 235.62777 C 56.042820000000006 320.08341 110.27662000000001 391.95002 185.79692 418.2828 L 167.25159 471.41267 C 69.90053999999999 437.38587 0 344.62779 0 235.62776 z" stroke-linecap="round" />
 </g>
-<g id="Layer_2">
-	<circle class="st0" cx="141.73" cy="141.73" r="136.06"/>
-	<ellipse class="st1" cx="141.73" cy="141.73" rx="110.67" ry="124.72"/>
-	<rect x="99.86" class="st1" width="93.79" height="283.46"/>
+<g transform="matrix(0.88 0 0 0.88 250 250)" id="JVUyV_ublp8-mMH9k1StN"  >
+<filter id="SVGID_323" y="-23%" height="146%" x="-27%" width="154%" >
+	<feGaussianBlur in="SourceAlpha" stdDeviation="0"></feGaussianBlur>
+	<feOffset dx="-18" dy="12" result="oBlur" ></feOffset>
+	<feFlood flood-color="rgb(0,0,0)" flood-opacity="1"/>
+	<feComposite in2="oBlur" operator="in" />
+	<feMerge>
+		<feMergeNode></feMergeNode>
+		<feMergeNode in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<path style="stroke: rgb(146,18,159); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(113,34,118); fill-rule: nonzero; opacity: 1;filter: url(#SVGID_323);" vector-effect="non-scaling-stroke"  transform=" translate(-120.43, -172.29)" d="M 217.21225 184.07104 C 192.66857000000002 170.80546 163.9832 156.88940000000002 132.91916 143.44679000000002 C 101.79562000000001 129.97843000000003 71.96018000000001 118.57604000000002 45.45069000000001 109.75838000000002 C 69.55563000000001 61.91032000000002 99.41756000000001 23.39581000000001 128.71848 1.4210854715202004e-14 C 172.00144 2.1439200000000143 211.10322 20.265110000000014 240.24364 48.583390000000016 C 243.17445 85.9077 235.53292 133.8994 217.21225 184.07103 z M 23.51859 160.49501 C 48.08916 173.78039 76.81807 187.72027 107.93354000000001 201.18513000000002 C 138.98950000000002 214.62424000000001 168.76294000000001 226.00636000000003 195.22928000000002 234.81606000000002 C 171.03227 282.74754 141.06255000000002 321.28152 111.68903000000002 344.58626000000004 C 68.70033000000001 342.52989 29.819620000000015 324.71362000000005 0.7025300000000101 296.79310000000004 C -2.47031999999999 259.39038000000005 5.09856000000001 211.05982000000006 23.51859000000001 160.49501000000004 z" stroke-linecap="round" />
 </g>
 </svg>
