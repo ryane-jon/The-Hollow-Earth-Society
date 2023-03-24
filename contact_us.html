@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <title> The Hollow Earth Society</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -10,11 +10,14 @@
 
     <body>
         <header>
+            <!-- Logo image and webpage title (acts as link to homepage) -->
             <a href="index.html" class="plainlink">
                 <img src="images/logo.svg" alt="Logo" class="logo"/>
                 <h1>The Hollow Earth Society</h1>
             </a>
         </header>
+
+        <!-- Navigation Bar -->
         <nav>
             <ul>
                 <a href="index.html"><li>Home</li></a>
@@ -24,6 +27,8 @@
                 <a href="img_gallery.html"><li>Image Gallery</li></a>
             </ul>   
         </nav>
+
+        <!-- Main Section -->
         <div class = "left-col">
             <main>
                 <form id="contactUsForm">
@@ -47,13 +52,15 @@
                         <textarea name="contactReason" value="" required></textarea> <br/>
                         
                         <label for="fileUpload">Attach a file: </label>
-                        <input type="file" name="fileUpload" value=""/> <br/>
+                        <input type="file" name="fileUpload"/> <br/>
                         
                         <button type="submit" onclick="sendForm()">Submit</button>
                     </fieldset>
                 </form>
             </main>
         </div>
+
+        <!-- News Section -->
         <div class = "right-col">
             <aside>
                 <h2>BIG NEWS</h2>

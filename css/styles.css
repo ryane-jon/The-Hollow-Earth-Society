@@ -1,6 +1,8 @@
 html{
     font-family: Arial;
 }
+
+/*Header */
 header{
     background-image: linear-gradient(to bottom right, rgb(222, 255, 255), rgb(128, 208, 208));
     box-shadow: 2px 2px 10px;
@@ -18,7 +20,7 @@ header{
         width: 78px;
     }
 
-
+/*Navigation Bar*/
 nav{
     width:100%;
     margin:0px;
@@ -60,18 +62,10 @@ nav{
         width:20%;
     }
 
-
+/*Body*/
 body{
     background-color: rgb(128, 128, 208);
 }
-    .left-col{
-        float:left;
-        width: 64%;
-    }
-    .right-col{
-        float:right;
-        width: 30%;
-    }
     main{
         background-image: linear-gradient(to bottom right, rgb(32, 32, 64), rgb(64, 64, 96));
         color: white;
@@ -96,7 +90,17 @@ body{
         float:right;
     }
 
+    /*Main Page Columns*/
+    .left-col{
+        float:left;
+        width: 64%;
+    }
+    .right-col{
+        float:right;
+        width: 30%;
+    }
 
+/*Footer*/
 footer{
     background-image: linear-gradient(to bottom right, rgb(32, 32, 64), rgb(64, 64, 96));
     color: white;
@@ -111,6 +115,7 @@ footer{
     box-shadow: 2px 2px 10px black;
 }
 
+/*Image Gallery*/
 .gallery-img{
     width:100%;
 }
@@ -130,6 +135,7 @@ footer{
     box-shadow: 0px 0px 10px black;
 }
 
+/*Carousel*/
 .carousel-item{
     width: 100%;
 }
@@ -140,6 +146,7 @@ h1{
     padding-top:10px;
     padding-bottom:14px;
 }
+
 /*table*/
 table{
     border-collapse: collapse;
