@@ -24,19 +24,18 @@ function toggleAuto(){
 
 function sendForm(){
     if(document.getElementById("contactUsForm").checkValidity()){
-        alert("Form has been sent successfully!");
+        alert("Form has been sent successfully! You have been placed in the queue at No. "+Math.round(100+Math.random()*100));
     }
 }
 
-
-document.getElementById("gallery-img").addEventListener("mouseover",highlight());
-document.getElementById("gallery-img").addEventListener("mouseout", delight());
-
-
-function highlight() {
-    document.getElementById("gallery-img").style="border: solid blue 2px;"
+function highlight(imgNo) {
+    document.getElementById("gallery-img"+imgNo).style="filter:saturate(100%); width: 99%; border: solid 4px white; box-shadow: 0px 0px 16px black;";
 }
+                                                                                                  
 function delight() {
-    document.getElementById("gallery-img").style="border: none;"
+    for(i=0; i<=9; i++){
+        document.getElementById("gallery-img"+i).style="filter:saturate(20%); width: 100%; border: none; box-shadow: none;";
+    }
 }
+    
     

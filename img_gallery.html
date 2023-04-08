@@ -20,13 +20,13 @@
 
         <!-- Navigation Bar -->
         <nav>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="contact_us.html"><li>Contact Us</li> </a> 
-                <a href="current_members.html"><li>Current Members</li></a> 
-                <a href="event_calendar.html"><li>Event Calendar</li></a>
-                <a href="img_gallery.html"><li class = "active" style="width:20.55%;">Image Gallery</li></a>
-            </ul>   
+            <div class="navcontainer">
+                <a href="index.html"><div class="navitem">Home</div></a>
+                <a href="contact_us.html"><div class="navitem">Contact Us</div> </a> 
+                <a href="current_members.html"><div class="navitem">Current Members</div></a> 
+                <a href="event_calendar.html"><div class="navitem">Event Calendar</div></a>
+                <a href="img_gallery.html"><div class="navitem active" style="width:20.55%;">Image Gallery</div></a>
+            </div>   
         </nav>
             <main>
                 <div>
@@ -45,109 +45,34 @@
                 <div class="container-fluid">
                     <div id="imageTable" class="row row-cols-3">
                         <div class="col" >
-                            <div class="btn-group">
-                                <button data-bs-toggle="dropdown" style="padding:0px; margin:4px; margin-bottom:8px;background-color: transparent;" alt="Push for info">
-                                    <img src="images/historychannel.jpg" class="gallery-img" alt="Diagram of the Hollow Earth"/>
-                                <ul class="dropdown-menu" style="background-color: darkslategray; color:white;">
-                                    Diagram from the history channel, so you know it's real.
-                                </ul>
-                            </button>
-                            </div>
+                            <img src="images/historychannel.jpg" class="gallery-img" alt="Diagram of the Hollow Earth" id="gallery-img0" onmouseover="highlight(0)" onmouseout="delight()"/>
                         </div>
                         <div class="col">
-                            <div class="btn-group">
-                                <button data-bs-toggle="dropdown" style="padding:0px; margin:4px; margin-bottom:8px;background-color: transparent;" alt="Push for info">
-                                    <img src="images/entrance0.png" class="gallery-img" alt="Photo of the hollow earth entrance"/>
-                                <ul class="dropdown-menu">
-                                    Photo of the entrance to the hollow earth taken by the legendary Buzz Lightyear
-                                </ul>
-                            </button>
-                            </div>
+                            <img src="images/entrance0.png" class="gallery-img" alt="Photo of the hollow earth entrance" id="gallery-img1" onmouseover="highlight(1)" onmouseout="delight()"/>
                         </div>
                         <div class="col">
-                            <div class="btn-group">
-                                <button data-bs-toggle="dropdown" style="padding:0px; margin:4px; margin-bottom:8px; background-color: transparent;" alt="Push for info">
-                                    <img src="images/entrance1.png" class="gallery-img" alt="Photo of the hollow earth entrance"/>
-                                <ul class="dropdown-menu">
-                                    Definitive proof of the hollow earth
-                                </ul>
-                            </button>
-                            </div>
-                            
+                            <img src="images/entrance1.png" class="gallery-img" alt="Photo of the hollow earth entrance" id="gallery-img2" onmouseover="highlight(2)" onmouseout="delight()"/>
                         </div>
                         <div class="col">
-                            <div class="btn-group">
-                                <button data-bs-toggle="dropdown" style="padding:0px; margin:4px; margin-bottom:8px; background-color: transparent;" alt="Push for info">
-                                    <img src="images/GIANT.png" class="gallery-img" alt="Drawing of a Giant"/>
-                                <ul class="dropdown-menu">
-                                    Artistic rendition of a HOLLOW EARTH GIANT from inside the HOLLOW EARTH
-                                </ul>
-                            </button>
-                            </div>
-                            
+                            <img src="images/GIANT.png" class="gallery-img" alt="Drawing of a Giant" id="gallery-img3" onmouseover="highlight(3)" onmouseout="delight()"/>
                         </div>
                         <div class="col">
-                            <div class="btn-group">
-                                <button data-bs-toggle="dropdown" style="padding:0px; margin:4px; margin-bottom:8px; background-color: transparent;" alt="Push for info">
-                                    <img src="images/giantSkeleton.png" class="gallery-img" alt="Giant Skeleton"/>
-                                <ul class="dropdown-menu">
-                                    The skull of a Mundo Subterranius, or a HOLLOW EARTH GIANT from inside the HOLLOW EARTH
-                                </ul>
-                            </button>
-                            </div>
-                            
+                            <img src="images/giantSkeleton.png" class="gallery-img" alt="Giant Skeleton" id="gallery-img4" onmouseover="highlight(4)" onmouseout="delight()"/>
                         </div>
                         <div class="col">
-                            <div class="btn-group">
-                                <button data-bs-toggle="dropdown" style="padding:0px; margin:4px; margin-bottom:8px; background-color: transparent;" alt="Push for info">
-                                    <img src="images/Gloperjocker2.png" class="gallery-img" alt="The Gloperjocker"/>
-                                <ul class="dropdown-menu" >
-                                    A terrifying creature: The Gloperjocker. Thought to be a 4 dimensional being who escaped the hollow earth and -until recently- was left imprisoned beneath the Bridge of Dee on the Red Night of 1179.
-                                </ul>
-                            </button>
-                            </div>
-                           
+                            <img src="images/Gloperjocker Sighting.jpg" class="gallery-img" alt="The Gloperjocker" id="gallery-img5" onmouseover="highlight(5)" onmouseout="delight()"/>
                         </div>
                         <div class="col">
-                            <div class="btn-group">
-                                <button data-bs-toggle="dropdown" style="padding:0px; margin:4px; margin-bottom:8px; background-color: transparent;" alt="Push for info">
-                                    <img src="images/map.png" class="gallery-img" alt="Hollow Earth map"/>
-                                <ul class="dropdown-menu">
-                                   A theorised map of the hollow earth.
-                                </ul>
-                            </button>
-                            </div>
-                            
+                            <img src="images/map.png" class="gallery-img" alt="Hollow Earth map" id="gallery-img6" onmouseover="highlight(6)" onmouseout="delight()"/>
                         </div>
                         <div class="col">
-                            <div class="btn-group">
-                                <button data-bs-toggle="dropdown" style="padding:0px; margin:4px; margin-bottom:8px; background-color: transparent;" alt="Push for info">
-                                    <img src="images/map-heightmap.png" class="gallery-img" alt="Hollow Earth height map"/>
-                                <ul class="dropdown-menu">
-                                   A heightmap showing how the subterrain correlates with the terrain.
-                                </ul>
-                            </button>
-                            </div>
+                            <img src="images/map-heightmap.png" class="gallery-img" alt="Hollow Earth height map" id="gallery-img7" onmouseover="highlight(7)" onmouseout="delight()"/>
                         </div>
                         <div class="col">
-                            <div class="btn-group">
-                                <button data-bs-toggle="dropdown" style="padding:0px; margin:4px; margin-bottom:8px; background-color: transparent;" alt="Push for info">
-                                    <img src="images/onionearth.png" class="gallery-img" alt="Hollow Earth cross section diagram with layers"/>
-                                <ul class="dropdown-menu">
-                                   The ONION EARTH hypothesis.
-                                </ul>
-                            </button>
-                            </div>
+                            <img src="images/onionearth.png" class="gallery-img" alt="Hollow Earth cross section diagram with layers" id="gallery-img8" onmouseover="highlight(8)" onmouseout="delight()"/>
                         </div>
                         <div class="col">
-                            <div class="btn-group">
-                                <button data-bs-toggle="dropdown" style="padding:0px; margin:4px; margin-bottom:8px; background-color: transparent;" alt="Push for info">
-                                    <img src="images/cross-section.png" class="gallery-img" alt="Hollow Earth cross section diagram"/>
-                                <ul class="dropdown-menu">
-                                   A now outdated diagram from _____'s science ̶f̶i̶c̶t̶i̶o̶n novel 
-                                </ul>
-                            </button>
-                            </div>
+                            <img src="images/cross-section.png" class="gallery-img" alt="Hollow Earth cross section diagram" id="gallery-img9" onmouseover="highlight(9)" onmouseout="delight()"/>
                         </div>
                     </div>
                 </div>    
