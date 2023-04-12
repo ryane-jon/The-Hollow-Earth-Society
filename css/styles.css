@@ -54,12 +54,18 @@ nav{
 
     .navitem:hover{
         background-color: rgb(128, 128, 208);
+        animation: navpulse 1500ms infinite;
     }
 
     .active{
         background-color: rgb(176, 176, 240);
         color: black;
         width:20%;
+    }
+
+    .active:hover{
+        animation:none;
+        background-color: rgb(176, 176, 240);
     }
 
 /*Body*/
@@ -70,7 +76,7 @@ body{
         background-image: linear-gradient(to bottom right, rgb(32, 32, 64), rgb(64, 64, 96));
         color: white;
         box-shadow: 2px 2px 8px black;
-        padding: 8px;
+        padding: 12px;
         margin:5px;
         border-radius: 4px;
         width: 99%;
@@ -148,6 +154,10 @@ h1{
     padding-bottom:14px;
 }
 
+a{
+    color:lightblue;
+}
+
 /*table*/
 table{
     border-collapse: collapse;
@@ -178,23 +188,47 @@ tr:hover{
     color:black;
 }
 
-/*animations & misc*/
+/*More Info*/
+.info-img{
+    width:100%;
+}
+
+iframe{
+    width: 100%;
+}
+
+/*Buttons*/
+button{
+    font-family: arial;
+}
 
 button:hover{
     animation: pulse 1500ms infinite;
 }
 
+button:disabled:hover{
+    animation: none;
+}
+
+/*animation*/
+
 @keyframes pulse{
 	0% {
 		transform: scale(1);
 	}
-	25% {
-		transform: scale(0.96);
+	33% {
+		transform: scale(0.98);
 	}
-	50% {
+	67% {
 		transform: scale(1.01)
 	}
-	75% {
+}
+
+@keyframes navpulse{
+	0% {
 		transform: scale(1);
 	}
+	50% {
+		transform: scale(0.98);
+    }
 }

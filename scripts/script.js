@@ -1,41 +1,55 @@
-function zoomGallery(colNo){
-    document.getElementById("imgToggleAuto").checked=false;
-    document.getElementById("zoomButton4").disabled=false;
-    document.getElementById("zoomButton3").disabled=false;
-    document.getElementById("zoomButton2").disabled=false;
-    document.getElementById("zoomButton1").disabled=false;
-    document.getElementById("zoomButton"+colNo).disabled=true;
-    document.getElementById("imageTable").classList = ('row row-cols-'+colNo);
+//Image gallery zoom controls
+function enableAllZoomButtons(){                                //loops through each zoom button and enables each
+    for(i=1; i<=4; i++){
+        document.getElementById("zoomButton"+i).disabled=false;
+    }
 }
 
-function toggleAuto(){
-    if(!document.getElementById("imgToggleAuto").checked){
-        document.getElementById("zoomButton3").disabled=true;
-        document.getElementById("imageTable").classList = ("row row-cols-3");
+function zoomGallery(colNo){                                    //zooms the image gallery to a specific number of images per row
+    document.getElementById("imgToggleAuto").checked=false;                     //make sure auto toggle is unchecked
+    enableAllZoomButtons()
+    document.getElementById("zoomButton"+colNo).disabled=true;                  //disable the button for the current zoom setting
+    document.getElementById("imageTable").classList = ('row row-cols-'+colNo);  //set the image table to the chosen zoom setting
+}
+
+function toggleAuto(){                                          //toggles automatic zooming (Changes zoom setting with window size using bootstrap)
+    if(!document.getElementById("imgToggleAuto").checked){              //if the auto button is already checked when clicked, zoom the gallery to 3 per row
+        zoomGallery(3);
     }
-    else{
-        document.getElementById("zoomButton4").disabled=false;
-        document.getElementById("zoomButton3").disabled=false;
-        document.getElementById("zoomButton2").disabled=false;
-        document.getElementById("zoomButton1").disabled=false;
+    else{                                                               //if the zoom button is unchecked when clicked, turn on auto zooming
+        enableAllZoomButtons()                                                  
         document.getElementById("imageTable").classList = ("row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4");
     }
 }
 
-function sendForm(){
+//image gallery image highlight
+function highlight(imgNo) {                                     //highlights the image
+    document.getElementById("gallery-img"+imgNo).style="filter:saturate(100%); width: 99%; border: solid 4px white; box-shadow: 0px 0px 16px black;";
+}
+
+function delight(imgNo) {                                       //un-highlights the image
+    document.getElementById("gallery-img"+imgNo).style="filter:saturate(20%); width: 100%; border: none; box-shadow: none;";}
+
+
+//contact form "send"
+function sendForm(){                                            //Checks if the values entered unto the form are valid before alerting the user of their queue position
     if(document.getElementById("contactUsForm").checkValidity()){
-        alert("Form has been sent successfully! You have been placed in the queue at No. "+Math.round(100+Math.random()*100));
+        alert("Form has been sent successfully! You have been placed in the queue at No. "+Math.round(100+Math.random()*900));
     }
 }
 
-function highlight(imgNo) {
-    document.getElementById("gallery-img"+imgNo).style="filter:saturate(100%); width: 99%; border: solid 4px white; box-shadow: 0px 0px 16px black;";
-}
-                                                                                                  
-function delight() {
-    for(i=0; i<=9; i++){
-        document.getElementById("gallery-img"+i).style="filter:saturate(20%); width: 100%; border: none; box-shadow: none;";
+//wiki page
+function showWikiPage(){                                        //toggles whether or not the embeded wiki page is shown
+    if(document.getElementById("wiki-page").hidden){                    //if the page is hidden, show it and change the button accordingly
+        document.getElementById("wiki-page").hidden=false;
+        document.getElementById("show-wiki-button").innerHTML="Hide Wikipedia Page";
+    }
+    else{
+        document.getElementById("wiki-page").hidden=true;               //if the page is shown, hide it and change the button accordingly
+        document.getElementById("show-wiki-button").innerHTML="Show Wikipedia Page";
     }
 }
+
+
     
     
