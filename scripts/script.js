@@ -21,6 +21,26 @@ function toggleAuto(){                                          //toggles automa
         document.getElementById("imageTable").classList = ("row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4");
     }
 }
+//log in
+var counter = 2;
+function login(){
+    if(counter % 2 == 0){
+        if(document.getElementById)
+        alert('You have been logged in!');
+        document.getElementById("logInEmail").hidden=true;
+        document.getElementById("password").hidden=true;
+        document.getElementById("logInEmail").value="";
+        document.getElementById("password").value="";
+        document.getElementById("loginButton").innerHTML="Log out";
+    }
+    else {
+        alert('You have been logged out!');
+        document.getElementById("logInEmail").hidden=false;
+        document.getElementById("password").hidden=false;
+        document.getElementById("loginButton").innerHTML="Log in"
+    }
+    counter += 1;
+}
 
 //image gallery image highlight
 function highlight(imgNo) {                                     //highlights the image
