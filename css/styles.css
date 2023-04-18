@@ -131,11 +131,11 @@ footer{
     filter: saturate(20%);
 }
 
-.col{
+#img-gallery .col{
     padding-top: 24px;
 }
 
-.row{
+#img-gallery .row{
     padding:8px;
 }
 
@@ -172,12 +172,20 @@ table{
 
 td{
     border: 2px solid rgb(96, 96, 128);
+    width:10%;
+    padding:4px;
+    font-size: 10pt;
 }
 
 th{
     background-color:rgb(32, 32, 64);
     border: 2px solid rgb(96, 96, 128);
     color: white;
+    text-align: center;
+    width:5%;
+    height: 50px;
+    font-size: 12pt;
+
 }
 
 tr:nth-child(even){
